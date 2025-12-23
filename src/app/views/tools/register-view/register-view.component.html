@@ -1,0 +1,202 @@
+
+    <div class="panel frost-background main-content">
+        <div class="panel-title">
+            Sales View
+        </div>
+
+        <div class="layout-row">
+            
+              <div class="list-canvas list frost-background">
+                    <div class="table-list-title">Guest List</div>
+                    <div class="list-container">
+                        <div class="table-list frost-background">
+                            <div class="table-header">
+                                <div>ID</div>
+                                <div>Identifier</div>
+                            </div>
+
+                            <div *ngFor="let user of users" class="table-row" 
+                                [ngClass]       = "{'selected': user.selected}" 
+                                (click)         = "selectUser(user)" 
+                                >
+                                <div>{{ user.id }}</div>
+                                <div>{{ user.identifier }}</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <div class="sale-data">
+                <div class="form-canvas">
+                    <div class="table-list-title">Guest Form</div>
+                    
+                    <div class="form-row">
+                           
+                        <div class="form-group">
+                            <div class="form-label">Identifier</div>
+                            <input type="text" placeholder="Identifier" class="form-field field-medium" value="{{currentIdentifier}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Get Tag</div>
+                            <div class="form-button"  (click)="getNextTag()">Next Tag</div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Random User</div>
+                            <div class="form-button"  (click)="createNewUser()">Create</div>
+                        </div>
+                    </div> 
+                    
+                    <div class="form-divider"></div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Picture</div>
+                            <div class="form-picture">
+                                <img *ngIf="currentUser?.picture" [src]="currentUser?.picture" class="user-picture"/>
+                            </div>
+                           
+                        </div>
+                         <div class="button blue-state" (click)="takePicture()">Get Picture</div>
+                         <div class="button green-state" (click)="upload()" *ngIf="currentImageData != ''" style="margin-left: 10px;">Upload</div>
+                    </div>
+
+                    <div class="form-divider"></div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Id</div>
+                            <input type="text" placeholder="Id" class="form-field field-small" [(ngModel)]="currentUser!.id">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Name(s)</div>
+                            <input type="text" placeholder="Name(s)" class="form-field field-short" [(ngModel)]="currentUser!.firstName">
+                        </div>
+                            
+                        <div class="form-group">
+                            <div class="form-label">Family Name</div>
+                            <input type="text" placeholder="Family Name" class="form-field field-short" [(ngModel)]="currentUser!.familyName">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Last Name</div>
+                            <input type="text" placeholder="Last Name" class="form-field field-short" [(ngModel)]="currentUser!.lastName">
+                        </div>
+
+                        <div class="form-group">
+                        <div class="form-label">Gender</div>
+                            <select class="form-field field-short" [(ngModel)]="currentUser!.gender">
+                                <option value="" disabled selected>Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                      <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Age</div>
+                            <input type="text" placeholder="##" class="form-field field-small" [(ngModel)]="currentUser!.age">
+                        </div>
+
+                         <div class="form-group">
+                            <div class="form-label">Language</div>
+                            <select class="form-field field-medium" [(ngModel)]="currentUser!.language">
+                                <option value="" disabled selected>Select</option>
+                                <option value="EN">English</option>
+                                <option value="SP">Spanish</option>
+                                <option value="FR">French</option>
+                                <option value="DE">German</option>
+                                <option value="IT">Italian</option>
+                                <option value="PT">Portuguese</option>
+                                <option value="ZH">Chinese</option>
+                                <option value="JA">Japanese</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Mail</div>
+                            <input type="text" placeholder="Mail" class="form-field field-medium" [(ngModel)]="currentUser!.mail">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Phone</div>
+                            <input type="text" placeholder="############" class="form-field field-medium" [(ngModel)]="currentUser!.phone">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-label">ZIP Code</div>
+                            <input type="text" placeholder="#####" class="form-field field-short" [(ngModel)]="currentUser!.zipCode">
+                        </div>
+                    </div>
+
+                     <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Disability</div>
+                             <div class="form-checkbox" (click)="currentUser!.hasDisability = !currentUser?.hasDisability"
+                                [class.form-checkbox-active]="currentUser?.hasDisability"
+                                [class.form-checkbox-inactive]="!currentUser?.hasDisability">
+                                {{ currentUser?.hasDisability ? '✔' : '✘' }}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-label">Disability Type</div>
+                             <select class="form-field field-medium" [(ngModel)]="currentUser!.disability">
+                                <option value="" disabled selected>Select</option>
+                                <option value="wheelchair">Wheelchair</option>
+                                <option value="visual">Visual</option>
+                                <option value="hearing">Hearing</option>
+                                <option value="motor">Motor</option>
+                                <option value="cognitive">Cognitive</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+                    
+                    <div class="button-line table-list-control">
+                        <div class="button red-state" (click)="deleteUser()" *ngIf="canDeleteUser">Delete</div>
+                        <div class="button green-state" (click)="insertUser()" *ngIf="canCreateNewUser">Insert</div>
+                        <div class="button blue-state" (click)="updateUser()" *ngIf="canUpdateUser">Update</div>
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="server-status">
+                <div class="server-control">
+
+                    <div class="button" (click)="serverActive ? serverControl('stop') : serverControl('start')" [ngClass]="{'green-state': serverActive, 'red-state ': !serverActive}">
+                                {{serverActive ? "Stop" : "Start"}}
+                    </div>
+
+                    <div class="button" (click)="serverControl('restart')" >
+                        Restart
+                    </div>
+                    <div class="button" (click)="serverControl('status')">
+                        Status
+                    </div>
+                    
+                </div>
+                
+                <div class="console-status">
+                    <pre>{{consoleHeader}}</pre>
+                </div>
+
+                <div class="console-output">
+                    <pre>{{consoleOutput}}</pre>
+                </div>  
+            </div>
+
+        </div>
+
+        <!-- <app-web-cam-picture></app-web-cam-picture> -->
+
+        <div #WebCamContainer></div>
+    </div>

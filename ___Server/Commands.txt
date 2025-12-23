@@ -1,0 +1,3 @@
+scp NodeApp.js root@sockets.ronic.mx:/root/App/
+ssh root@sockets.ronic.mx
+ssh-add --apple-use-keychain ~/.ssh/id_rsa

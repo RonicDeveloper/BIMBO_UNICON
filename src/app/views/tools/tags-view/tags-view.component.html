@@ -1,0 +1,164 @@
+
+    <div class="panel frost-background main-content">
+        <div class="panel-title">
+            Tags View
+        </div>
+
+        
+
+         <div class="device-form  drop-shadow">
+            <div class="form-canvas hard-background">
+                <div class="form-header">
+                    Connect As...
+                </div>
+
+                
+                <div class="form-divider"></div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <div class="form-label">Attraction</div>
+                        <select class="form-field field-medium" value="connectedAttraction?.idAttraction" (change)="attractionChange($event)">
+                            <option *ngFor="let attraction of attractions" [value]="attraction.id" [selected]="attraction.id === connectedAttraction?.id">{{attraction.name}}</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="form-label">WebSockets</div>
+                        <div class="button" (click)="webSocketConnect()" [ngClass]="{'green-state': connected, 'red-state ': !connected}">
+                            {{connected ? "Disconnect" : "Connect"}}
+                        </div>
+                    </div>
+
+            
+
+                    <div class="form-group">
+                        <div class="form-label">UUID</div>
+                        <input class="form-field field-long" type="text" value="{{clientUUID}}" disabled />
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="form-label">IP Address</div>
+                        <input class="form-field field-medium" type="text" value="{{clientIpAddress}}" disabled />
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-label">Attraction</div>
+                        <input class="form-field field-medium" type="text" value="{{attractionCode}}" disabled />
+                    </div>
+
+                        <div class="form-group">
+                        <div class="form-label">View ALL.</div>     
+                        <div class="form-checkbox" (click)="seeAllNotifications = !seeAllNotifications ; "
+                            [class.form-checkbox-active]="seeAllNotifications"
+                            [class.form-checkbox-inactive]="!seeAllNotifications">
+                            {{ seeAllNotifications ? '✔' : '✘' }}
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+          
+
+
+
+        <div class="layout-row">
+
+        <div class="list frost-background">
+            <div class="table-list-title">Venue Attractions</div>
+            
+            <div class="list-container attraction-list">
+                <div class="frost-background">
+                    
+                    <div class="table-list-container">
+
+                        <div class="table-header">
+                            <div class="field-small">ID</div>
+                            <div class="field-medium">Code</div>
+                            <div class="field-medium">Name</div>
+                        </div>
+                        
+                        <div *ngFor="let item of attractions" class="table-row" 
+                        [ngClass]       = "{'selected': item.selected}" 
+                        (click)         = "selectAttraction(item.id)"
+                        >
+                        <div>{{ item.id }}</div>
+                        <div>{{ item.code }}</div>
+                        <div>{{ item.name }}</div>
+                    </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>    
+
+
+
+        <div class="list frost-background ">
+            <div class="table-list-title">Tags</div>
+           
+            <div class="list-container tags-list ">
+                <div class="tfrost-background " >
+                    <div class="table-list-container">
+
+                    <div class="table-header">
+                        <div class="field-small">ID</div>
+                        <div class="field-medium">Name</div>
+                    </div>
+
+                    <div *ngFor="let item of tags" class="table-row" 
+                        [ngClass]       = "{'selected': item.selected}" 
+                        (click)         = "selectTag(item.id);" 
+                        >
+                        <div>{{ item.id }}</div>
+                        <div>{{ item.identifier }}</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+         <div class="list frost-background ">
+            <div class="table-list-title">Events</div>
+           
+            <div class="list-container tags-log ">
+                <div class="form-label">Output</div>
+                <pre class="output-event">{{outEvent}}</pre>
+
+                <div class="form-label">Input</div>
+                <pre class="input-event">
+                    {{inputEvent}}
+                </pre>
+            </div>
+             <div class="button-line table-list-control">
+                 <!-- <div class="icon frost-background"  (click)="clearSelection()">
+                    <mat-icon svgIcon="trash-can-outline" matListIcon > </mat-icon>
+                 </div> -->
+  
+                <div class="bread-crumb">
+                   <span>{{selectedAttraction?.code}}</span> {{selectedAttraction ? '&nbsp; > &nbsp;' : ''}} <span>{{selectedTag?.identifier}}</span> 
+                </div>
+
+                <div class="icon frost-background" (click)="sendTagEvent()">
+                    <mat-icon svgIcon="email-fast" matListIcon > </mat-icon>
+                </div>
+            </div>
+        </div>
+
+
+
+         
+
+
+    </div>
+

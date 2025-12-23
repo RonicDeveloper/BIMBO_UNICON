@@ -1,0 +1,82 @@
+<div class="panel frost-background main-content">
+    <div class="panel-title">
+        Web Sockets View
+    </div>
+    <div class="layout-row">
+        <div class="list-canvas list frost-background">
+            <div class="table-list-title">Connected Clients</div>
+            <div class="button-line table-list-control">
+                <div class="button" (click)="webSocketConnect()" [ngClass]="{'green-state': connected, 'red-state ': !connected}">{{connected ? "Disconnect" : "Connect"}}</div>
+                <div class="button" (click)="refresh()" [ngClass]="{'disabled': !connected}">Refresh</div>
+                <div class="button" (click)="sendTagEvent()" [ngClass]="{'disabled': !connected}">Send Event</div>
+            </div>
+            <div class="list-container">
+                <div class="table-list frost-background">
+                    <div class="table-header">
+                        <div class="field-short">Attraction Code</div>
+                        <div class="field-medium">IP Address</div>
+                        <div class="field-long">UUID</div>
+
+                    </div>
+
+                    <div *ngFor="let client of clientList" class="table-row" 
+                        [ngClass]       = "{'selected': client.selected}" 
+                        (click)         = "selectClient(client)"
+                        >
+                        <div>{{ client.attractionCode }}</div>
+                        <div>{{ client.ipAddress }}</div>
+                        <div>{{ client.uuid }}</div>
+                    </div>
+                </div>
+            </div>                    
+        </div>
+
+
+
+        
+        <div class="list frost-background connected-clients">
+            
+             <div *ngFor="let client of connectedClients; index as i"  class="connected-client"
+                [ngClass]       = "{'selectedConnection': client.selected}" 
+                (click)         = "selectClient(client)"
+                [class.connetion-ok]        = "client.currentConnections == 1 && client.ipAddress != ''"
+                [class.connection-warning]  = "client.currentConnections != 1"
+                [class.connection-error]    = "client.ipAddress == '' || client.ipAddress == '0.0.0.0' || client.ipAddress == 'localhost'"
+                >
+                <div><strong>{{ client.attractionCode }}</strong></div>
+                <div>{{ client.ipAddress }}</div>
+                <div>CON: {{ client.currentConnections }}</div>
+                <div class="notification-badge" *ngIf="client.notified">&#9873;</div>
+            </div>
+        </div>
+
+        <!-- <div class="list frost-background ">
+            <div class="table-list-title">Events</div>
+           
+            <div class="list-container tags-log ">
+                <div class="form-label">Output</div>
+                <pre class="output-event">{{outEvent}}</pre>
+
+                <div class="form-label">Input</div>
+                <pre class="input-event">
+                    {{inputEvent}}
+                </pre>
+            </div>
+             <div class="button-line table-list-control">
+                 <div class="icon frost-background"  (click)="clearSelection()">
+                    <mat-icon svgIcon="trash-can-outline" matListIcon > </mat-icon>
+                 </div>
+  
+                <div class="bread-crumb">
+                   <span>{{selectedAttraction?.code}}</span> {{selectedAttraction ? '>' : ''}} <span>{{selectedTag?.identifier}}</span> 
+                </div>
+
+                <div class="icon frost-background" (click)="sendTagEvent()">
+                    <mat-icon svgIcon="email-fast" matListIcon > </mat-icon>
+                </div>
+            </div>
+        </div> -->
+
+    </div>
+</div>
+

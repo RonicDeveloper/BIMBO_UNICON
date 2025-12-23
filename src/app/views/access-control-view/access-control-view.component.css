@@ -1,0 +1,138 @@
+
+
+.tools{
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;   
+    padding: 0px;
+    height: 60%;
+    max-width: 550px;
+    gap: 10px  ;
+}
+
+.userTools{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:right;
+    gap: 5px;
+}
+
+.list-canvas{
+    padding: 10px;
+    /* margin-top: 10px; */
+    width: 480px;
+    height: 600px;
+    overflow-y: auto;
+}
+
+
+.bread-crumb{
+    font-size: 12px;
+    margin-right: 10px;
+    padding-top: 10px;
+    line-height: 22px;
+}
+
+.tags-log{
+    width: 500px;
+     height: 100%;
+    padding: 10px;
+}
+
+.output-event{
+    width: 100%;
+    height: 130px;
+    overflow-y: scroll;
+    background-color: #00000090;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: monospace;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.input-event{
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #00000090;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    font-family: monospace;
+    color: white;
+    margin-bottom: 10px;
+}
+
+
+.table-list-container{
+    height: 600px;
+    overflow: scroll;
+    /* border: red 1px solid; */
+}
+
+
+.connected-clients{
+    width: 100%;
+    max-width: 950px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    overflow: scroll;
+    gap: 10px;
+    padding: 20px;
+}
+
+.connected-client {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: lighter !important;
+    line-height: 12px;
+}
+
+.connetion-ok{
+    background-color: rgb(41, 73, 36);
+    font-weight: bold;
+}   
+
+.connection-warning{
+    background-color: rgb(102, 85, 36);
+    font-weight: bold;
+}
+
+.connection-error{
+    background-color: rgb(102, 36, 36);
+    font-weight: bold;
+}
+
+
+.selectedConnection{
+    border: 2px solid rgb(36, 224, 7);
+}
+
+.notification-badge{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: bold;
+}

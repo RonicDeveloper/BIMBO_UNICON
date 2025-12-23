@@ -1,0 +1,41 @@
+<div class="panel frost-background main-content">
+    <div class="panel-title">
+        Web Sockets View
+    </div>
+    <div class="layout-row">
+        <div class="list-canvas list frost-background">
+            <div class="table-list-title">Connected Clients</div>
+            <div class="button-line table-list-control">
+                <div class="button" (click)="webSocketConnect()" [ngClass]="{'green-state': connected, 'red-state ': !connected}">{{connected ? "Disconnect" : "Connect"}}</div>
+                <div class="button" (click)="refresh()" [ngClass]="{'disabled': !connected}">Refresh</div>
+                <div class="button" (click)="sendTagEvent(1)" [ngClass]="{'disabled': !connected}">Door 1</div>
+                <div class="button" (click)="sendTagEvent(2)" [ngClass]="{'disabled': !connected}">Door 2</div>
+            </div>
+            <div class="list-container">
+                <div class="table-list frost-background">
+                    <div class="table-header">
+                        <div class="field-short">Attraction Code</div>
+                        <div class="field-medium">IP Address</div>
+                        <div class="field-long">UUID</div>
+
+                    </div>
+
+                    <div *ngFor="let client of clientList" class="table-row" 
+                        [ngClass]       = "{'selected': client.selected}" 
+                        (click)         = "selectClient(client)"
+                        >
+                        <div>{{ client.attractionCode }}</div>
+                        <div>{{ client.ipAddress }}</div>
+                        <div>{{ client.uuid }}</div>
+                    </div>
+                </div>
+            </div>                    
+        </div>
+
+
+
+
+
+    </div>
+</div>
+

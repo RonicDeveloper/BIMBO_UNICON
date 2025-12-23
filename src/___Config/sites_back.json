@@ -1,0 +1,3014 @@
+[
+    {
+       "devices": [
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "xserve",
+                "ipAddress": "192.168.0.26",
+                "macAddress": "64:4e:d7:66:a4:c6",
+                "name": "Main Server",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "D17C83F8-8798-47E1-A472-0275E2B68CAA",
+                "wolEnable": true,
+                "x": 595, 
+                "y": 635
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.64.22",
+                "macAddress": "64:4e:d7:66:b9:ae",
+                "name": "Floor Controller",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D1",
+                "wolEnable": true,
+                "x": 800,
+                "y": 635
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.64.25",
+                "macAddress": "64:4e:d7:66:a8:1e",
+                "name": "Main Controller",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "9EB589B0-BA40-44D1-A597-30DD4F861689",
+                "wolEnable": true,
+                "x": 685,
+                "y": 520
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.64.23",
+                "macAddress": "64:4e:d7:66:a5:ac",
+                "name": "Left Controller",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "3DB089F2-30CD-475C-A097-2B72E36472FE",
+                "wolEnable": true,
+                "x": 305,
+                "y": 480
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.64.24",
+                "macAddress": "64:4e:d7:66:b4:2b",
+                "name": "Right Controller",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "F7CABA62-24CA-4A2C-B8C2-4FB172DF90E4",
+                "wolEnable": true,
+                "x": 1050,
+                "y": 480
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "shareplay",
+                "ipAddress": "192.168.64.41",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Left Rod4",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 9008,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 2
+                },
+                "update": false,
+                "uuid": "E614515B-E634-4682-A07B-CB34D3A58EDA",
+                "wolEnable": false,
+                "x": 260,
+                "y": 170
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "shareplay",
+                "ipAddress": "192.168.64.42",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Center Rod4",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 9008,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 2
+                },
+                "update": true,
+                "uuid": "23722994-5B62-4103-9651-3CF3859D1DE8",
+                "wolEnable": false,
+                "x": 680,
+                "y": 125
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "shareplay",
+                "ipAddress": "192.168.64.43",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Right Rod4",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 9008,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 2
+                },
+                "update": true,
+                "uuid": "2B503045-F74D-4892-B6CF-6B07AF9DFD02",
+                "wolEnable": false,
+                "x": 1110,
+                "y": 170
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.0.61",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "3A385B8D-43A1-4117-B980-CF9F2FB4DC03",
+                "wolEnable": false,
+                "x": 260,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.0.62",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "60A82903-6430-42F0-8D30-A22B36B25922",
+                "wolEnable": false,
+                "x": 580,
+                "y": 205
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.0.63",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 3",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "8293E027-7EEB-4183-A065-44A7406BD76C",
+                "wolEnable": false,
+                "x": 780,
+                "y": 205
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.0.64",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 4",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "5E0FA880-ED1F-489A-B88F-CCC113E1FD97",
+                "wolEnable": false,
+                "x": 1110,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.0.60",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 5",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "1AE5FFA4-E538-4873-ADE5-2A5247089F16",
+                "wolEnable": false,
+                "x": 480,
+                "y": 315
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.0.66",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 6",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4200,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "013D7298-4DB8-4042-8523-DBFCCA1187FB",
+                "wolEnable": false,
+                "x": 680,
+                "y": 315
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.64.67",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 7",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "FC7A6555-2DB1-4F14-A5F0-F5D7A59A7770",
+                "wolEnable": false,
+                "x": 880,
+                "y": 315
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.64.68",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 8",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "1DD8E537-0C66-4EDA-94D8-7F638AE2EFA8",
+                "wolEnable": false,
+                "x": 305,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.64.69",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 9",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "A8C1FF32-6CDF-4610-80F4-7FA90441A944",
+                "wolEnable": false,
+                "x": 1050,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": true,
+                "icon": "web.camera",
+                "ipAddress": "192.168.64.32",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Right Camera",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 554,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 6
+                },
+                "update": true,
+                "uuid": "12469E75-DF57-410A-BBA0-8E65B37CEF60",
+                "wolEnable": false,
+                "x": 1050,
+                "y": 400
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": true,
+                "icon": "web.camera",
+                "ipAddress": "192.168.64.31",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 544,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 6
+                },
+                "update": false,
+                "uuid": "6ECE2DD1-20A6-4549-A5EC-258266CDB482",
+                "wolEnable": false,
+                "x": 305,
+                "y": 410
+            }
+        ],
+        "floorPlan": "MundoFloorPlan",
+        "name": "Mundo",
+        "useWebSockets": true,
+        "uuid": "FB96589F-3860-4D08-9DE7-DADA3B692EB3",
+        "wsAddress": "192.168.64.21",
+        "wsPort": 6500
+    },
+    {
+        "devices": [
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.64.99",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "FF92DFE8-7DAC-42DA-9F84-A292CB649830",
+                "wolEnable": false,
+                "x": 690,
+                "y": 380
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "macpro.gen3",
+                "ipAddress": "192.168.64.111",
+                "macAddress": "64:4e:d7:66:a4:c6",
+                "name": "Mac mini",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 7
+                },
+                "update": true,
+                "uuid": "3886E0E4-AD80-4ED6-9E8E-3E4505714602",
+                "wolEnable": true,
+                "x": 690,
+                "y": 440
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.64.125",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "E8BF02D5-4A3C-4111-A043-D4D33066944D",
+                "wolEnable": true,
+                "x": 685,
+                "y": 305
+            }
+        ],
+        "floorPlan": "MundoFloorPlan",
+        "name": "Componer",
+        "useWebSockets": true,
+        "uuid": "A69CD2BF-6E47-41C5-A697-6B94FBC1EED8",
+        "wsAddress": "192.168.64.21",
+        "wsPort": 6500
+    },
+    {
+        "devices": [
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "0.0.0.0",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Projector 1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "0D94C18E-BFE7-4FD3-A3D4-2EC9909F76A7",
+                "wolEnable": false,
+                "x": 690,
+                "y": 360
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "xserve",
+                "ipAddress": "192.168.64.198",
+                "macAddress": "64:4e:d7:66:a4:c6",
+                "name": "Main Server",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 3000,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "21018A27-CC93-48C8-8348-EF6264DC66EB",
+                "wolEnable": true,
+                "x": 690,
+                "y": 420
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "ipad.landscape",
+                "ipAddress": "0.0.0.0",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Tablet 1",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 4
+                },
+                "update": true,
+                "uuid": "1D45F612-A8AB-4648-B0BA-020D599498F4",
+                "wolEnable": false,
+                "x": 690,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "ipad.landscape",
+                "ipAddress": "0.0.0.0",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Tablet 2",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 4
+                },
+                "update": false,
+                "uuid": "BF0A82F0-998B-453B-8631-AF5F3521CFD0",
+                "wolEnable": false,
+                "x": 690,
+                "y": 540
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "ipad.landscape",
+                "ipAddress": "0.0.0.0",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Tablet 3",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 4
+                },
+                "update": false,
+                "uuid": "6CD855E5-B4AC-41DF-B3D3-4F6C7ED2D003",
+                "wolEnable": false,
+                "x": 890,
+                "y": 390
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "ipad.landscape",
+                "ipAddress": "0.0.0.0",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Tablet 4",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 4
+                },
+                "update": false,
+                "uuid": "B314A3C6-005F-4F5C-87A2-AD8F7C8AC26F",
+                "wolEnable": false,
+                "x": 490,
+                "y": 390
+            }
+        ],
+        "floorPlan": "MundoFloorPlan",
+        "name": "Ciudad",
+        "useWebSockets": true,
+        "uuid": "F1250F87-4723-4501-B871-9D8F05D20F6E",
+        "wsAddress": "192.168.64.21",
+        "wsPort": 6500
+    },
+    {
+        "devices": [
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.31",
+                "macAddress": "64:4e:d7:66:b4:8f",
+                "name": "PW-01",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "a7a38f9b-4011-4744-a63f-fc912f83257c",
+                "wolEnable": true,
+                "x": 290,
+                "y": 305
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.32",
+                "macAddress": "64:4e:d7:66:a5:87",
+                "name": "PW-02",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "397cd416-443e-40ba-ad2f-efdbd12093df",
+                "wolEnable": true,
+                "x": 690,
+                "y": 305
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.33",
+                "macAddress": "64:4e:d7:66:a8:3e",
+                "name": "PW-03",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "3f8fde02-0c0b-4339-b9fe-1081b2582738",
+                "wolEnable": true,
+                "x": 1075,
+                "y": 305
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.35",
+                "macAddress": "64:4e:d7:66:a8:41",
+                "name": "PF-01",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "3b79e0c6-50ec-46fa-a3f7-cf943f79bf4d",
+                "wolEnable": true,
+                "x": 290,
+                "y": 485
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.36",
+                "macAddress": "64:4e:d7:66:a6:14",
+                "name": "PF-02",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "8e8c663f-90e5-4bf5-8f5c-78f28f7fa616",
+                "wolEnable": true,
+                "x": 1075,
+                "y": 485
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.37",
+                "macAddress": "64:4e:d7:66:a8:44",
+                "name": "TW-01",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "50d1c356-f95d-4402-8576-acba620d709a",
+                "wolEnable": true,
+                "x": 500,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.38",
+                "macAddress": "64:4e:d7:66:a6:6c",
+                "name": "TW-02",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "3d0b2b1d-2960-4ed9-bc82-27c9ff2e3675",
+                "wolEnable": true,
+                "x": 695,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.39",
+                "macAddress": "64:4e:d7:66:a0:86",
+                "name": "TW-03",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "e8217e5d-259a-45cd-ad5f-5d3d307b744f",
+                "wolEnable": true,
+                "x": 890,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.40",
+                "macAddress": "64:4e:d7:66:a5:48",
+                "name": "TF-01",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "066c0652-e17b-46be-87da-06c84ff67cd0",
+                "wolEnable": true,
+                "x": 600,
+                "y": 620
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.41",
+                "macAddress": "64:4e:d7:66:b5:05",
+                "name": "TF-02",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "1fd241ca-88dd-4f3c-b1df-68b2f293676c",
+                "wolEnable": true,
+                "x": 795,
+                "y": 620
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.42",
+                "macAddress": "64:4e:d7:66:a7:29",
+                "name": "TW-03",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "9efe4ce3-378a-4f42-90e5-33c96ec2e3f9",
+                "wolEnable": true,
+                "x": 705,
+                "y": 680
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.61",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "9069f449-4417-4752-9e36-711dc02470e5",
+                "wolEnable": false,
+                "x": 190,
+                "y": 185
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.62",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "de651b75-561e-469c-bbd1-059d2ce27f25",
+                "wolEnable": false,
+                "x": 385,
+                "y": 185
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.63",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-3",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "6f9bf60a-edfc-4da6-9083-cff09a16de77",
+                "wolEnable": false,
+                "x": 290,
+                "y": 245
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.64",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-4",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "0ca31da2-a676-4553-a387-9dc6b997469a",
+                "wolEnable": false,
+                "x": 585,
+                "y": 185
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.65",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-5",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "a031a284-4cda-46c6-b40c-85f0d6fc4b1d",
+                "wolEnable": false,
+                "x": 780,
+                "y": 185
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.66",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-6",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "f77681ae-0e4e-4df6-adea-93efcad21560",
+                "wolEnable": false,
+                "x": 690,
+                "y": 245
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.67",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-7",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "604a7301-15b1-4ed4-86c8-cd0f163855fa",
+                "wolEnable": false,
+                "x": 980,
+                "y": 185
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.68",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-8",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "a005910e-07a9-4d10-9a1d-2fb7b167af69",
+                "wolEnable": false,
+                "x": 1175,
+                "y": 185
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.69",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "WALL-9",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "58c278ed-38df-4bfc-9a04-41949ca92eca",
+                "wolEnable": false,
+                "x": 1075,
+                "y": 245
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.71",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "7670a8c4-929a-41ac-9b01-f2f50418ac4f",
+                "wolEnable": false,
+                "x": 190,
+                "y": 365
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.72",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "fe8a67b9-07f1-4b18-a753-982d185c0fd6",
+                "wolEnable": false,
+                "x": 385,
+                "y": 365
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.73",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-3",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "ba632702-2e64-462d-98fc-5dc1cd4dc597",
+                "wolEnable": false,
+                "x": 190,
+                "y": 425
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.74",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-4",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "6a6499b4-023a-4c44-9ef5-067576984d97",
+                "wolEnable": false,
+                "x": 385,
+                "y": 425
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.75",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-5",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "9568c24c-22b7-47e2-9419-0a523b74ff67",
+                "wolEnable": false,
+                "x": 980,
+                "y": 365
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.76",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-6",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "822dfa72-0d04-4fda-bafd-224f36b200f2",
+                "wolEnable": false,
+                "x": 1175,
+                "y": 365
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.77",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-7",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "76716433-4971-4026-956c-cd9b11547b73",
+                "wolEnable": false,
+                "x": 980,
+                "y": 425
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.78",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "FLOOR-8",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "9fb72a72-fa5f-480c-b9e2-f81fbc56d50d",
+                "wolEnable": false,
+                "x": 1175,
+                "y": 425
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.81",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-01",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": false,
+                "uuid": "70D9FD2F-1CD8-41B5-A8AB-259296E121BB",
+                "wolEnable": false,
+                "x": 200,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.82",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-02",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": false,
+                "uuid": "2A8E1B8C-DFBD-4AF9-ADD7-5B08FA9B4F56",
+                "wolEnable": false,
+                "x": 200,
+                "y": 620
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.83",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-03",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": false,
+                "uuid": "3B43C607-E931-46CC-9C7C-1207941ACEE0",
+                "wolEnable": false,
+                "x": 200,
+                "y": 680
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.84",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-04",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": false,
+                "uuid": "96048DDE-038E-4ECF-90D8-F566EC86B024",
+                "wolEnable": false,
+                "x": 200,
+                "y": 740
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.85",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-05",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": true,
+                "uuid": "C82A599A-189B-4DCA-9CFD-B9FEEA40C8E0",
+                "wolEnable": false,
+                "x": 1175,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.86",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-06",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": true,
+                "uuid": "CAB25773-C194-4A37-9B49-51A7A0C8E377",
+                "wolEnable": false,
+                "x": 1175,
+                "y": 620
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.87",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-07",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": false,
+                "uuid": "E0445077-969D-4895-9FF6-4FF71F29CDE5",
+                "wolEnable": false,
+                "x": 1175,
+                "y": 680
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.88",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "GEOBOX-08",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": true,
+                "uuid": "4F092B50-93AF-4A45-82D8-91A60A3E71FC",
+                "wolEnable": false,
+                "x": 1175,
+                "y": 740
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.43",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "9ABAACA2-235E-44A6-ABF8-99DA66CC0FFC",
+                "wolEnable": true,
+                "x": 610,
+                "y": 750
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.44",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "2660A738-078E-490A-B82D-3B11306EFB8F",
+                "wolEnable": true,
+                "x": 805,
+                "y": 750
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.51",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "DANTE-01",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": true,
+                "uuid": "94E86E6A-C405-4D57-9823-7C82116A41FB",
+                "wolEnable": false,
+                "x": 510,
+                "y": 860
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.52",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "DANTE-02",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": false,
+                "uuid": "DC60DA8A-1B97-46BE-B20F-0DB51015F0CB",
+                "wolEnable": false,
+                "x": 705,
+                "y": 860
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "questionmark.square.dashed",
+                "ipAddress": "192.168.65.53",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "DANTE-03",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 0
+                },
+                "update": true,
+                "uuid": "D45FE61D-777D-4494-AA04-9BA3F5E3FD07",
+                "wolEnable": false,
+                "x": 900,
+                "y": 860
+            }
+        ],
+        "floorPlan": "MundoFloorPlan",
+        "name": "Bosque",
+        "useWebSockets": false,
+        "uuid": "7DA50A2A-73AF-4527-BD3F-B2137AACD0C2",
+        "wsAddress": "192.168.66.1",
+        "wsPort": 6500
+    },
+    {
+        "devices": [
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.47",
+                "macAddress": "64:4e:d7:66:a7:96",
+                "name": "Device Name",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "043B6376-B241-4649-97C1-6B2B6917BAF8",
+                "wolEnable": true,
+                "x": 705,
+                "y": 680
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.46",
+                "macAddress": "64:4e:d7:66:b5:15",
+                "name": "Device Name",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "94DF3196-BA4E-41C5-ABE9-C6D36DCCED81",
+                "wolEnable": true,
+                "x": 1020,
+                "y": 390
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.65.45",
+                "macAddress": "64:4e:d7:66:a4:46",
+                "name": "Device Name",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "17BA6832-C703-447B-B7F8-1FCCA4FC0AD4",
+                "wolEnable": true,
+                "x": 370,
+                "y": 390
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.99",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "6F3A1F31-DB96-49C9-88F5-11D9969AA698",
+                "wolEnable": false,
+                "x": 705,
+                "y": 620
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.98",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "C04A62A0-0EF4-4694-878B-3175EEA224F8",
+                "wolEnable": false,
+                "x": 800,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.97",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "E2CD0E22-1BE4-4356-892C-C8FBB190DC26",
+                "wolEnable": false,
+                "x": 600,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.93",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "037D10B7-196B-4CF7-806D-4C71730A393A",
+                "wolEnable": false,
+                "x": 370,
+                "y": 330
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.96",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "F8E4E590-C376-4134-B62F-452B42C7BCCF",
+                "wolEnable": false,
+                "x": 1020,
+                "y": 330
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.91",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "C0D43EDC-DB66-4600-8067-DF6BC974A751",
+                "wolEnable": false,
+                "x": 275,
+                "y": 270
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.92",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "7DDD9D7B-CA80-4AB6-863A-26B268C08637",
+                "wolEnable": false,
+                "x": 475,
+                "y": 270
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.95",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "382621C5-E25B-4770-AD4D-30FACADCE7FD",
+                "wolEnable": false,
+                "x": 1110,
+                "y": 270
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.65.94",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "Device Name",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "D164CC53-F952-4D8A-90CB-3961E0149642",
+                "wolEnable": false,
+                "x": 910,
+                "y": 270
+            }
+        ],
+        "floorPlan": "MundoFloorPlan",
+        "name": "Lago",
+        "useWebSockets": true,
+        "uuid": "8CFA60BA-57B6-43C7-9D5F-D176CBBB318C",
+        "wsAddress": "192.168.64.21",
+        "wsPort": 6500
+    },
+    {
+        "devices": [
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.21",
+                "macAddress": "64:4e:d7:66:a0:75",
+                "name": "S1-GAME-PC",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "C7FB9DC9-2022-42A0-8710-B1722D52DA0E",
+                "wolEnable": true,
+                "x": 255,
+                "y": 440
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.22",
+                "macAddress": "64:4e:d7:66:a7:00",
+                "name": "S1-TRACKING-PC1",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "A8E39F68-FB6C-43CE-8684-BFF90C217895",
+                "wolEnable": true,
+                "x": 160,
+                "y": 500
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.23",
+                "macAddress": "64:4e:d7:66:ba:32",
+                "name": "S1-TRACKING-PC2",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "029391DB-8710-4D51-B286-3C73AC272495",
+                "wolEnable": true,
+                "x": 355,
+                "y": 500
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.24",
+                "macAddress": "64:4e:d7:66:a6:f1",
+                "name": "S1-TRACKING-PC3",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "341EE8B1-9544-4682-B1D0-5FD923AFADAA",
+                "wolEnable": true,
+                "x": 255,
+                "y": 560
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.25",
+                "macAddress": "64:4e:d7:66:a3:94",
+                "name": "S2-GAME-PC1",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "A4CA6D62-F922-4811-8A7A-EAC7DBF3D7B7",
+                "wolEnable": true,
+                "x": 700,
+                "y": 435
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.26",
+                "macAddress": "64:4e:d7:66:95:2e",
+                "name": "S2-TRACKING-PC1",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "98236EC2-E654-4E04-8C26-3F8F15D4E58E",
+                "wolEnable": true,
+                "x": 590,
+                "y": 495
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.27",
+                "macAddress": "64:4e:d7:66:b9:f2",
+                "name": "S2-TRACKING-PC2",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "6FE1059E-6693-4E1A-802A-2EB75B0C7CBA",
+                "wolEnable": true,
+                "x": 785,
+                "y": 495
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.28",
+                "macAddress": "64:4e:d7:66:a5:cb",
+                "name": "S2-TRACKING-PC3",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "EC60DC5B-4B00-4E7F-BF0E-FA8724103518",
+                "wolEnable": true,
+                "x": 700,
+                "y": 555
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.29",
+                "macAddress": "64:4e:d7:66:a7:b1",
+                "name": "S3-GAME-PC1",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "93B3EDE3-CEA3-41BE-A21A-62ABB54C80A5",
+                "wolEnable": true,
+                "x": 1125,
+                "y": 435
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.30",
+                "macAddress": "64:4e:d7:66:b8:79",
+                "name": "S3-TRACKING-PC1",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "23437C8E-0F2B-49FE-AA59-7CE4AFA9C1F5",
+                "wolEnable": true,
+                "x": 1020,
+                "y": 495
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.31",
+                "macAddress": "64:4e:d7:66:a1:0c",
+                "name": "S3-TRACKING-PC2",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "B62D89CC-B02B-434A-A1A8-FD27A3CDDE54",
+                "wolEnable": true,
+                "x": 1215,
+                "y": 495
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.32",
+                "macAddress": "64:4e:d7:66:a7:56",
+                "name": "S3-TRACKING-PC3",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "26759eab-6616-4466-92df-0e6cbc9f23f4",
+                "wolEnable": true,
+                "x": 1130,
+                "y": 555
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.61",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-WALL-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "FFEF6AA6-A132-4E31-AEE5-00D431EF4069",
+                "wolEnable": false,
+                "x": 155,
+                "y": 190
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.62",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-WALL-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "6D30FA0C-11A5-4BFB-93CA-247A6AB6413C",
+                "wolEnable": false,
+                "x": 350,
+                "y": 190
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.63",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-FLOOR-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "FAFDAC5C-AF25-440E-BA9A-05F94B934DBB",
+                "wolEnable": false,
+                "x": 155,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.64",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-FLOOR-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "C3833181-B731-4CC0-8B73-3201897A9466",
+                "wolEnable": false,
+                "x": 350,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.65",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-WALL-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "5289990F-36DF-41F3-808C-4EC45227357E",
+                "wolEnable": false,
+                "x": 590,
+                "y": 190
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.66",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-WALL-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "9DFDDAC1-C43F-47DD-A4A8-F32262E8E0C4",
+                "wolEnable": false,
+                "x": 785,
+                "y": 190
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.67",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-FLOOR-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "D53CCE9C-9A02-4980-8BE4-E0E762867C28",
+                "wolEnable": false,
+                "x": 590,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.68",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-FLOOR-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "26178784-11F6-426A-B759-82726F13F504",
+                "wolEnable": false,
+                "x": 785,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.69",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-WALL-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "60B9C6EC-D270-421B-87C0-75FC5763B456",
+                "wolEnable": false,
+                "x": 1020,
+                "y": 190
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.70",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-WALL-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "34AA61B2-E37F-4B14-B52C-D9018B90DD37",
+                "wolEnable": false,
+                "x": 1215,
+                "y": 190
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.71",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-FLOOR-1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": true,
+                "uuid": "BFB3BDC1-945C-40FA-BB4B-622013AE893A",
+                "wolEnable": false,
+                "x": 1020,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "videoprojector",
+                "ipAddress": "192.168.66.72",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-FLOOR-2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 3
+                },
+                "port": 4352,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 5
+                },
+                "update": false,
+                "uuid": "1BE5938B-DD72-47C9-868B-76B890F61415",
+                "wolEnable": false,
+                "x": 1215,
+                "y": 250
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.91",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-GB-F1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "58DAC62C-2492-42CD-B45F-35ABB7A18680",
+                "wolEnable": true,
+                "x": 155,
+                "y": 310
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.92",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-GB-F2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "FAF3BBAE-9692-4E8D-913D-137DB13FEAF5",
+                "wolEnable": true,
+                "x": 350,
+                "y": 310
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.93",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-GB-F1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "E6C01F8B-C1FF-4DAA-8105-5F9817498AF9",
+                "wolEnable": true,
+                "x": 590,
+                "y": 310
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.94",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-GB-F2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "7C61C8C3-0E58-473A-8814-99B8B4FF3C2E",
+                "wolEnable": true,
+                "x": 785,
+                "y": 310
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.95",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-GB-F1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "7ABB8C53-79E0-405C-BFED-8B4DE554C530",
+                "wolEnable": true,
+                "x": 1020,
+                "y": 310
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.96",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-GB-F2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "df724334-27ee-4834-bcf2-faefcdf23aa7",
+                "wolEnable": true,
+                "x": 1215,
+                "y": 310
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.51",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-AMP1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "18dc58d9-dfa9-48a1-8d36-15b272c2c6a0",
+                "wolEnable": true,
+                "x": 155,
+                "y": 370
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.52",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S1-AMP2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "e2aa0808-7c2e-44fa-8c6a-b559011932ae",
+                "wolEnable": true,
+                "x": 350,
+                "y": 370
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.53",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-AMP1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "7ee33115-78b6-492b-9322-a9b67514ce05",
+                "wolEnable": true,
+                "x": 590,
+                "y": 370
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.54",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S2-AMP2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "282e5d6f-703a-44b7-af19-2922ad80b6a8",
+                "wolEnable": true,
+                "x": 785,
+                "y": 370
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.55",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-AMP1",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "9c177683-15fb-4f11-99a0-f28411b110fd",
+                "wolEnable": true,
+                "x": 1020,
+                "y": 370
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.56",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "S3-AMP2",
+                "pjLinkEnable": true,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "a36f9184-3aa0-40b6-ad09-26df717c4602",
+                "wolEnable": true,
+                "x": 1215,
+                "y": 370
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.73",
+                "macAddress": "64:4e:d7:66:a7:78",
+                "name": "TOUCH",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "c194eb93-9e05-4431-ba44-83de5c28a3a3",
+                "wolEnable": true,
+                "x": 705,
+                "y": 655
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.74",
+                "macAddress": "64:4e:d7:66:a7:5f",
+                "name": "LED",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "c0c94525-1471-4251-9d5f-b254a10621ff",
+                "wolEnable": true,
+                "x": 705,
+                "y": 715
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.75",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "LED-CTRL-A",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "8cf64b1a-027b-4bf6-953c-2b10cbe75914",
+                "wolEnable": true,
+                "x": 1005,
+                "y": 775
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.76",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "LED-CTRL-B",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "a6d53286-377c-4aea-aedd-ee0c2ddbee66",
+                "wolEnable": true,
+                "x": 615,
+                "y": 775
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.77",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "LED-CTRL-C",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": true,
+                "uuid": "0ff768c9-3cc8-46db-83ba-e3cd1e2ef0f2",
+                "wolEnable": true,
+                "x": 420,
+                "y": 775
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "192.168.66.78",
+                "macAddress": "00:00:00:00:00:00",
+                "name": "LED-CTRL-D",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 0,
+                "status": {
+                    "rawValue": 2
+                },
+                "type": {
+                    "rawValue": 3
+                },
+                "update": false,
+                "uuid": "3ec68364-11ce-4018-ad7d-e82a987f2fb4",
+                "wolEnable": true,
+                "x": 810,
+                "y": 775
+            }
+        ],
+        "floorPlan": "MundoFloorPlan",
+        "name": "Arena",
+        "useWebSockets": false,
+        "uuid": "7DA50A2A-73AF-4527-BD3F-B2137AACD0C2",
+        "wsAddress": "192.168.66.1",
+        "wsPort": 6500
+    }
+]

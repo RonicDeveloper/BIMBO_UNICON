@@ -1,0 +1,35 @@
+
+{   
+    "USE_LOCAL_SERVER"          : true,
+    "PROTOCOL"                  : "https",
+    "VPS_HOST"                  : "sockets.ronic.mx",
+    "HOST"                      : "bimbo-server.lan",
+    "SERVICE"                   : "MainService",
+    "SERVICE_FOLDER"            : "___Services/",
+    
+    "WEBSOCKET_PORT"            : 6200,
+    "WEBSOCKET_SECURE_PORT"     : 3443,
+    "CONTROL_SOCKET_PORT"       : 5555,
+    "CONTROL_SOCKET_HOST"       : "bimbo-server.lan",
+
+    "API_MEDIA_PORT"            : 5003,
+    "API_MEDIA_SECURE_PORT"     : 3444,
+    "API_MEDIA_GET_TOKEN"       : "/auth/token",
+    "API_MEDIA_TEST_TOKEN"      : "/auth/test",
+    "API_MEDIA_CREATE_ACTIVITY" : "/user/activity",
+    "API_MEDIA_UPLOAD"          : "/media/upload",
+    "API_MEDIA_LIST"            : "/media/list",
+    "API_MEDIA_SHARE"           : "/media/share",
+    "API_MEDIA_KEY"             : "3fcb0527-26dd-45d8-830b-6741277e611f",
+
+    "API_TAGS_PORT"             : 3000,
+    "API_TAGS_SECURE_PORT"      : 3443,
+    "API_TAGS_KEY"              : "edf39cde-bbec-4804-8531-614d336a8d59",
+    "API_TAGS_NOTIFICATIONS"    : "/api/rfidnotifications",
+
+    "API_POS_PORT"              : 5001,
+    "API_POS_SECURE_PORT"       : 3445,
+    "API_POS_KEY"               : "b7abebe6-2d05-4ac3-9130-5fd416d67d09",
+    "API_POS_SALE"              : "/api/POS_Service",
+    "API_POS_SALE_STATUS"       : "/api/POS_Status"
+}

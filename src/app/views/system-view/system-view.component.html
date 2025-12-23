@@ -1,0 +1,34 @@
+<div class="main-content frost-background">
+    <div class="panel">
+        
+        <div class="devices-canvas" #DevicesCanvas id="DevicesCanvas">
+            <div class="device-power-buttons">
+                <div class = "button" (click)="powerOnAllDevices()"><mat-icon svgIcon="power" class="green-state" matListIcon > </mat-icon>Power On</div>
+                <div class = "button" (click)="resetAllDevices()"><mat-icon svgIcon="reload" class="blue-state" matListIcon > </mat-icon>Reset</div>
+                <div class = "button" (click)="powerOffAllDevices()"><mat-icon svgIcon="power"  class="red-state" matListIcon > </mat-icon>Power Off</div>
+                <div class = "button" (click)="getMacAddress()"><mat-icon svgIcon="power" matListIcon > </mat-icon>GetMac</div>
+            </div>
+            <div class="device" *ngFor="let device of SELECTED_DEVICES" [style.left.px]="device.x" [style.top.px]="device.y" (mousedown)="selectDevice(device.uuid)" [class.device-selected]="device.selected" [id]="device.uuid"
+            cdkDrag (cdkDragMoved)="drag($event,device)" 
+            >
+                <div class="device-icon" 
+                    [class.online]  ="device.status == 1"
+                    [class.offline] ="device.status == 0"  
+                
+                ><mat-icon svgIcon="{{device.icon}}" matListIcon > </mat-icon></div>
+                <div class="device-info">
+                    <div class="device-name">{{device.name}}</div>
+                    <div class="device-ip">{{device.ipAddress}}:{{device.port}}</div>
+                    <div class="device-label" *ngIf="device.type == 5">{{device.pjLinkData.name}}</div>
+                    <div class="device-label" *ngIf="device.type == 5"
+                        [class.red-state]       = "device.pjLinkData.status == 0"
+                        [class.green-state]     = "device.pjLinkData.status == 1"
+                        [class.yellow-state]    = "device.pjLinkData.status == 3"
+                        [class.blue-state]      = "device.pjLinkData.status == 2"
+                    >{{device.pjLinkData.statusLabel}}</div>
+                </div>
+            </div>
+            <div class="site-floor-plan" [style.background-image]="'url(___Assets/floorPlans/' + SELECTED_SITE.floorPlan + '.png)'" *ngIf="SELECTED_SITE.floorPlan != ''"  ></div>
+        </div>
+    </div>
+</div>  

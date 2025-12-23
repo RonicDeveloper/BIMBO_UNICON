@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../UNICON_SERVER"
+		},
+		{
+			"path": "../../../Web/RonicUnicon/UNICON_WEB"
+		},
+		{
+			"path": "../../VS_ARDUINO/UNICON_V7.0"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "UNICON_WEB",
+		"files.associations": {
+			"*.sqlbook": "sql",
+			"*.ndjson": "jsonl",
+			"*.dbclient-js": "javascript",
+			"random": "cpp"
+		}
+	}
+}

@@ -1,0 +1,10 @@
+{
+    "PROTOCOL"              : "https",
+    "HOST"                  : "unicon.ronic.mx",
+    "SERVICE_FOLDER"        : "___Services/",
+    "SOCKET_PORT"           : 6500,
+    "SOCKET_HOST"           : "sockets.ronic.mx",
+    "CONTROL_SOCKET_PORT"   : 5555,
+    "CONTROL_SOCKET_HOST"   : "localhost",
+    "SERVICE"               : "MainService" 
+}

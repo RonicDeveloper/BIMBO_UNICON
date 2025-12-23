@@ -1,0 +1,45 @@
+<div class="frost-background"
+    [class.main-container]               = "!MOBILE_VIEW" 
+    [class.main-container-mobile]        = "MOBILE_VIEW"
+>
+
+    <div 
+        [class.icons-container]              = "!MOBILE_VIEW" 
+        [class.icons-container-mobile]        = "MOBILE_VIEW"
+    >
+        <div class="icon frost-background" (click)="toggleMenu()">
+            <mat-icon svgIcon="book-open-outline" matListIcon  *ngIf="!MOBILE_VIEW" > </mat-icon>
+            <mat-icon svgIcon="menu" matListIcon  *ngIf="MOBILE_VIEW" > </mat-icon>
+        </div>
+
+        <!-- *ngIf="DEVICE_POWER||DEVICE_CONFIG" -->
+        <div > 
+            <div class="icon frost-background" (click)="setTool('DEVICE_CONFIG')" [class.selected]="DEVICE_CONFIG">
+                <mat-icon svgIcon="cog-outline" matListIcon > </mat-icon>
+            </div>
+            <div class="icon frost-background" (click)="setTool('DEVICE_POWER')" [class.selected]="DEVICE_POWER">
+                <mat-icon svgIcon="power" matListIcon > </mat-icon>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+    <div 
+        [class.tools-container-mobile]        = "MOBILE_VIEW"
+    >
+       
+    </div>
+</div>
+
+
+<!-- 
+<div class="tool-divider"></div>
+<app-toggle-wiget [label] = "'Name'" [buttonOnLabel] = "'ON'"  [buttonOffLabel] = "'OFF'"   [widgetType] = "'TOGGLE'" [status]="true"></app-toggle-wiget>
+
+<div class="tool-divider"></div>
+<app-toggle-wiget [label] = "'Name'" [statusColor] = "'#ffaa0060'"  [statusLabel] = "'CONNECTING'"   [widgetType] = "'STATUS'" ></app-toggle-wiget>
+
+<div class="tool-divider"></div>
+<app-toggle-wiget [label] = "'Name'" [buttonOnLabel] = "'Connect'"  [buttonOffLabel] = "''"   [widgetType] = "'BUTTON'" ></app-toggle-wiget> -->

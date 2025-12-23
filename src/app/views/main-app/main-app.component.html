@@ -1,0 +1,47 @@
+
+<div class="main-container" id="MainComponentContainer" [style.background-image]="'url(___Assets/images/BackGround.png)'">
+
+    <div #LeftMenu              [style]="{'z-index': USER_LOGGED?'0':'-1'}"
+        [class.cell-left]               = "!MOBILE_VIEW" 
+        [class.cell-left-mobile]        = "MOBILE_VIEW" 
+    >
+        <app-left-menu></app-left-menu>
+    </div>
+    
+    <div #MainContent           [style]="{'z-index': USER_LOGGED?'0':'-1'}"
+        [class.cell-center]               = "!MOBILE_VIEW" 
+        [class.cell-center-mobile]        = "MOBILE_VIEW" 
+    >
+        <app-main-content></app-main-content>
+    </div>
+
+    <div #RighttMenu        [style]="{'z-index': USER_LOGGED?'0':'-1'}"
+        [class.cell-right]               = "!MOBILE_VIEW" 
+        [class.cell-right-mobile]        = "MOBILE_VIEW" 
+    >
+        <app-right-menu></app-right-menu>
+    </div>
+  
+    <app-login-view *ngIf="!USER_LOGGED"></app-login-view>
+
+    <div class="alert-modal" #AlertModal [style.display]="ALERT.show?'flex':'none'">
+        <div class="alert-container frost-background" #AlertContainer>
+            <div class="alert-header">
+                <div class="alert-image">
+                    <mat-icon svgIcon="alert" matListIcon > </mat-icon>
+                </div>
+                <div class="alert-title">{{ALERT.title}}</div>
+                <div class="alert-close" (click)="alertCancel()">
+                    <mat-icon svgIcon="close" matListIcon > </mat-icon>
+                </div>
+            </div>
+            
+            <div class="alert-message">{{ALERT.message}}</div>
+            <div class="alert-controls">
+                <div class="alert-cancel" (click)="alertCancel()" *ngIf="ALERT.showCancel">{{ALERT.cancel}}</div>
+                <div class="alert-confirm" (click)="alertConfirm()">{{ALERT.confirm}}</div>
+            </div>
+        </div>
+    </div>
+    
+</div>

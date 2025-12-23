@@ -1,0 +1,14 @@
+<div class="main-content frost-background">
+    <div class="panel">
+        <div class="dmx-canvas">
+            <div *ngFor="let value of DMX_BUFFER; let i = index" class="dmx-cell">
+                
+                <div class="dmx-channel">{{i}}</div>
+                <div class="dmx-divider"></div>
+                <div class="dmx-value">{{value}}</div>
+                <div class="dmx-background" [style.opacity]="value/255"></div> 
+            </div>
+            
+        </div>
+    </div>
+</div>  

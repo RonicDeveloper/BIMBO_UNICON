@@ -1,0 +1,364 @@
+
+    <div class="panel frost-background main-content">
+        <div class="panel-title">
+            Automation View
+        </div>
+
+        <!-- <div class="bread-crumb frost-background">
+            <span>{{selectedLocation?.name}}</span> {{selectedAttraction ? '>' : ''}} <span>{{selectedAttraction?.name}}</span> {{selectedDevice ? '>' : ''}} <span>{{selectedDevice?.name}}</span>
+        </div> -->
+
+        <div class="layout-row">
+
+        <div class="list frost-background ">
+            <div class="table-list-title">Venue Locations</div>
+            <div class="power-menu">
+                <div class="device-power-buttons">
+                    <div class = "button" (click)="powerOnAllDevices()"><mat-icon svgIcon="power" class="green-state" matListIcon > </mat-icon>Power On</div>
+                    <div class = "button" (click)="resetAllDevices()"><mat-icon svgIcon="reload" class="blue-state" matListIcon > </mat-icon>Reset</div>
+                    <div class = "button" (click)="powerOffAllDevices()"><mat-icon svgIcon="power"  class="red-state" matListIcon > </mat-icon>Power Off</div>
+                </div>
+            </div>
+            <div class="list-container location-list ">
+                <div class="table-list frost-background " >
+                    <div class="table-header">
+                        <div class="field-short">ID</div>
+                        <div class="field-medium">Name</div>
+                        <div class="field-short">Active</div>
+                    </div>
+
+                    <div *ngFor="let item of locations" class="table-row" 
+                        [ngClass]       = "{'selected': item.selected}" 
+                        (click)         = "selectLocation(item.id);" 
+                        >
+                        <div>{{ item.id }}</div>
+                        <div>{{ item.name }}</div>
+                
+                        <!-- <div>{{ item.active }}</div> -->
+                        <div>
+                            <!-- (click)="item.active = !item.active" -->
+                            <div class="list-checkbox" 
+                                [class.list-checkbox-active]="item.active"
+                                [class.list-checkbox-inactive]="!item.active">
+                                {{ item.active ? '✔' : '✘' }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="button-line table-list-control">
+                 <div class="icon frost-background" *ngIf="selectedLocation" (click)="openEditor('location')">
+                    <mat-icon svgIcon="text-box-edit-outline" matListIcon > </mat-icon>
+                 </div>
+                 <div class="icon frost-background" *ngIf="selectedLocation">
+                    <mat-icon svgIcon="trash-can-outline" matListIcon > </mat-icon>
+                 </div>
+                 <div class="icon frost-background" (click)="createLocation()">
+                    <mat-icon svgIcon="plus-box-outline" matListIcon > </mat-icon>
+                 </div>
+            </div>
+        </div>
+
+
+        <div class="list frost-background">
+            <div class="table-list-title">Venue Attractions</div>
+             <div class="power-menu">
+                <div class="device-power-buttons">
+                    <div class = "button" (click)="powerOnAllDevices()"><mat-icon svgIcon="power" class="green-state" matListIcon > </mat-icon>Power On</div>
+                    <div class = "button" (click)="resetAllDevices()"><mat-icon svgIcon="reload" class="blue-state" matListIcon > </mat-icon>Reset</div>
+                    <div class = "button" (click)="powerOffAllDevices()"><mat-icon svgIcon="power"  class="red-state" matListIcon > </mat-icon>Power Off</div>
+                </div>
+            </div>
+            <div class="list-container attraction-list">
+                <div class="table-list frost-background">
+                    <div class="table-header">
+                        <div class="field-short">ID</div>
+                        <div class="field-medium">Code</div>
+                        <div class="field-medium">Name</div>
+                        <div class="field-medium">Active</div>
+                    </div>
+
+                    <div *ngFor="let item of attractions" class="table-row" 
+                        [ngClass]       = "{'selected': item.selected}" 
+                        (click)         = "selectAttraction(item.id)"
+                        >
+                        <div>{{ item.id }}</div>
+                        <div>{{ item.code }}</div>
+                        <div>{{ item.name }}</div>
+                 
+
+                        <!-- <div>{{ item.active }}</div> -->
+                        <div>
+                            <!-- (click)="item.active = !item.active" -->
+                            <div class="list-checkbox" 
+                                [class.list-checkbox-active]="item.active"
+                                [class.list-checkbox-inactive]="!item.active">
+                                {{ item.active ? '✔' : '✘' }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-line table-list-control">
+                 <div class="icon frost-background" *ngIf="selectedAttraction" (click)="openEditor('attraction')">
+                    <mat-icon svgIcon="text-box-edit-outline" matListIcon > </mat-icon>
+                 </div>
+                 <div class="icon frost-background" *ngIf="selectedAttraction" (click)="deleteAttraction()">
+                    <mat-icon svgIcon="trash-can-outline" matListIcon > </mat-icon>
+                 </div>
+                 <div class="icon frost-background" (click)="createAttraction()">
+                    <mat-icon svgIcon="plus-box-outline" matListIcon > </mat-icon>
+                 </div>
+
+            </div>
+        </div>
+
+        <div class="list frost-background">
+                <div class="table-list-title">Device List</div>
+                
+                 <div class="power-menu">
+                    <div class="device-power-buttons">
+                        <div class = "button" (click)="powerOnDevice()"><mat-icon svgIcon="power" class="green-state" matListIcon > </mat-icon>Power On</div>
+                        <div class = "button" (click)="resetDevice()"><mat-icon svgIcon="reload" class="blue-state" matListIcon > </mat-icon>Reset</div>
+                        <div class = "button" (click)="powerOffDevice()"><mat-icon svgIcon="power"  class="red-state" matListIcon > </mat-icon>Power Off</div>
+                        <div class = "button" (click)="getMacAddress()"><mat-icon svgIcon="power" matListIcon > </mat-icon>GetMac</div>
+                        <div class = "button" (click)="runCommand()"><mat-icon svgIcon="power" matListIcon > </mat-icon>Run</div>
+                    </div>
+                </div>
+
+                <div class="list-container device-list">
+                    <div class="table-list frost-background">
+                        <div class="table-header">
+                            <div>ID</div>
+                            <div>Type</div>
+                            <div>Name</div>
+                            <div>IpAddress</div>
+                            <div>MacAddress</div>
+                            <div>Port</div>
+                            <!-- <div>InPort</div>
+                            <div>OutPort</div> -->
+                            <!-- <div>LocationX</div>
+                            <div>LocationY</div> -->
+                            <div>Active</div>
+                        </div>
+
+                        <div *ngFor="let item of devices" class="table-row" 
+                            [ngClass]       = "{'selected': item.selected}" 
+                            (click)         = "selectDevice(item.id)" 
+                            >
+                            <div>{{ item.id }}</div>
+                            <div><mat-icon svgIcon="{{item.icon}}" matListIcon  class="table-row-icon"
+                                [ngClass]="{
+                                    'online' : item.status === 1,
+                                    'offline'   : item.status === 0
+                                }"    
+                            > </mat-icon></div>
+                            <div>{{ item.name }}</div>
+                            <div>{{ item.ipAddress}}</div>
+                            <div>{{ item.macAddress }}</div>
+                            <div>{{ item.protocol }} : {{ item.inPort }}</div>
+                            <!-- <div>{{ item.inPort }}</div>
+                            <div>{{ item.outPort }}</div> -->
+                            <!-- <div>{{ item.locationX }}</div>
+                            <div>{{ item.locationY }}</div> -->
+                            <div>
+                                <!-- (click)="item.active = !item.active" -->
+                                <div class="list-checkbox" 
+                                    [class.list-checkbox-active]="item.active"
+                                    [class.list-checkbox-inactive]="!item.active">
+                                    {{ item.active ? '✔' : '✘' }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="button-line table-list-control">
+                    <div class="icon frost-background" *ngIf="selectedDevice" (click)="openEditor('device')">
+                    <mat-icon svgIcon="text-box-edit-outline" matListIcon > </mat-icon>
+                 </div>
+                 <div class="icon frost-background" *ngIf="selectedDevice" (click)="deleteDevice()">
+                    <mat-icon svgIcon="trash-can-outline" matListIcon > </mat-icon>
+                 </div>
+                 <div class="icon frost-background" (click)="createDevice()">
+                    <mat-icon svgIcon="plus-box-outline" matListIcon > </mat-icon>
+                 </div>
+                </div>
+                
+            </div>
+
+
+        <div class="editor frost-background" *ngIf="editorActive">
+
+            <div class="location-form  drop-shadow" *ngIf="editLocation">
+                <div class="form-canvas hard-background">
+                    <div class="form-header">
+                        Location
+                    </div>
+                    <div class="form-divider"></div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Id</div>
+                            <input type="text" placeholder="Id" class="form-field field-short" value="{{selectedLocation?.id}}">
+                        </div>
+                            
+                        <div class="form-group">
+                            <div class="form-label">Name</div>
+                            <input type="text" placeholder="Name" class="form-field field-medium" value="{{selectedLocation?.name}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Active</div>
+                            <input type="checkbox" placeholder="Active" class="form-field field-short" [checked]="selectedLocation?.active">
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+                    <div class="button-line table-list-control">
+                        <div class="button" (click)="cancelEdit()">Cancel</div>
+                        <div class="button" (click)="updateLocation()">Update</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+             <div class="attraction-form  drop-shadow" *ngIf="editAttraction">
+                <div class="form-canvas hard-background">
+                    <div class="form-header">
+                        Attraction
+                    </div>
+                    <div class="form-divider"></div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Id</div>
+                            <input type="text" placeholder="Id" class="form-field field-short" value="{{selectedAttraction?.id}}" disabled>
+                        </div>
+                            
+                     </div>
+                     <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Code</div>
+                            <input type="text" placeholder="Code" class="form-field field-medium" value="{{selectedAttraction?.code}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Name</div>
+                            <input type="text" placeholder="Name" class="form-field field-medium" value="{{selectedAttraction?.name}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Active</div>
+                            <input type="checkbox" placeholder="Active" class="form-checkbox" [checked]="selectedAttraction?.active">
+                        </div>
+                    </div>
+
+                    <div class="form-divider"></div>
+                    <div class="button-line table-list-control">
+                        <div class="button" (click)="cancelEdit()">Cancel</div>
+                        <div class="button" (click)="updateAttraction()">Update</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+             <div class="device-form  drop-shadow" *ngIf="editDevice">
+                <div class="form-canvas hard-background">
+                    <div class="form-header">
+                        Device
+                    </div>
+                    <div class="form-divider"></div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Id</div>
+                            <input type="text" placeholder="Id" class="form-field field-short" value="{{selectedDevice?.id}}" disabled>
+                        </div>
+                     </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Location</div>
+                            <select class="form-field field-medium" value="selectedDevice?.idLocation" (change)="getAttractionCombo($event.target)">
+                                <option *ngFor="let location of locations" [value]="location.id" [selected]="location.id === selectedDevice?.idLocation">{{location.name}}</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Attraction</div>
+                            <select class="form-field field-medium" value="selectedDevice?.idAttraction">
+                                <option *ngFor="let attraction of attractionCombo" [value]="attraction.id" [selected]="attraction.id === selectedDevice?.idAttraction">{{attraction.name}}</option>
+                            </select>
+                        </div>
+
+                     </div>
+
+
+                     <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Device Type</div>
+                            <input type="text" placeholder="Device Type" class="form-field field-medium" value="{{selectedDevice?.deviceType}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Name</div>
+                            <input type="text" placeholder="Name" class="form-field field-long" value="{{selectedDevice?.name}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Active</div>
+                            <input type="checkbox" placeholder="Active" class="form-checkbox" [checked]="selectedDevice?.active">
+                        </div>
+                    </div>
+
+
+                     <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">IP Address</div>
+                            <input type="text" placeholder="IP Address" class="form-field field-medium" value="{{selectedDevice?.ipAddress}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">MAC Address</div>
+                            <input type="text" placeholder="MAC Address" class="form-field field-medium" value="{{selectedDevice?.macAddress}}">
+                        </div>
+
+                    </div>
+
+
+                     <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">In Port</div>
+                            <input type="text" placeholder="In Port" class="form-field field-short" value="{{selectedDevice?.inPort}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Out Port</div>
+                            <input type="text" placeholder="Out Port" class="form-field field-short" value="{{selectedDevice?.outPort}}">
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="form-divider"></div>
+                    <div class="button-line table-list-control">
+                        <div class="button" (click)="cancelEdit()">Cancel</div>
+                        <div class="button" (click)="updateAttraction()">Update</div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+

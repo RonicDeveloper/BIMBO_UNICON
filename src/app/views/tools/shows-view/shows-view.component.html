@@ -1,0 +1,144 @@
+<div class="panel frost-background main-content">
+    <div class="panel-title">
+        Shows View
+    </div>
+
+    <div class="layout-row">
+        
+            <div class="shows-canvas list frost-background">
+                <div class="table-list-title">Shows</div>
+                <div class="list-container">
+                    <div class="table-list frost-background">
+                        <div class="table-header">
+                            <div class="field-small">ID</div>
+                            <div class="field-short">Code</div>
+                            <div class="field-medium">Name</div>
+                            <div class="field-medium">Slots</div>
+                            <div class="field-medium">DisSlots</div>
+                            <div class="field-medium">Active</div>
+                        </div>
+
+                        <div *ngFor="let show of shows" class="table-row" 
+                            [ngClass]       = "{'selected': show.selected}" 
+                            (click)         = "selectShow(show)" 
+                            >
+                            <div>{{ show.id }}</div>
+                            <div>{{ show.attractionCode }}</div>
+                            <div>{{ show.name }}</div>
+                            <div>{{ show.maxGuests }}</div>
+                            <div>{{ show.maxDisabilityGuests }}</div>
+                            <div>
+                                <div class="list-checkbox" 
+                                    [class.list-checkbox-active]="show.active"
+                                    [class.list-checkbox-inactive]="!show.active">
+                                    {{ show.active ? '✔' : '✘' }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="schedules-canvas list frost-background">
+                <div class="table-list-title">Schedule</div>
+                <div class="list-container">
+                    <div class="table-list frost-background">
+                        <div class="table-header">
+                            <div class="field-small">ID</div>
+                            <div class="field-medium">Schedule</div>
+                            <div class="field-medium">InCue</div>
+                            <div class="field-medium">DisInCue</div>
+                            <div class="field-medium">Status</div>
+                        </div>
+
+                        <div *ngFor="let schedule of schedules" class="table-row" 
+                            [ngClass]       = "{'selected': schedule.selected}" 
+                            (click)         = "selectShowSchedule(schedule)" 
+                            >
+                            <div>{{ schedule.id }}</div>
+                            <div>{{ schedule.showTime }}</div>
+                            <div>{{ schedule.totalGuests }} / {{ schedule.maxGuests }}</div>
+                            <div>{{ schedule.totalDisabilityGuests }} / {{ schedule.maxDisabilityGuests }}</div>
+                            <div>
+                                <div class="list-checkbox" 
+                                    [class.list-checkbox-active]="schedule.status=='active'"
+                                    [class.list-checkbox-inactive]="schedule.status=='inactive' || schedule.status=='suspended'"
+                                    [class.list-checkbox-warning]="schedule.status=='maintenance'">
+                                    {{ schedule.status=='active' ? '✔' : '' }}
+                                    {{ schedule.status=='suspended' ? '✘' : '' }}
+                                    {{ schedule.status=='maintenance' ? '⚠' : '' }}
+                                    {{ schedule.status=='inactive' ? '✘' : '' }}
+                                </div>  
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="guests-canvas list frost-background">
+                <div class="table-list-title">Guests</div>
+                <div class="list-container">
+                    <div class="table-list frost-background">
+                        <div class="table-header">
+                            <div class="field-small">ID</div>
+                            <div class="field-medium">Identifier</div>
+                            <div class="field-small">Status</div>
+                        </div>
+
+                        <div *ngFor="let slot of showSlots" class="table-row" 
+                            [ngClass]       = "{'selected': slot.selected}" 
+                            (click)         = "selectShowSlot(slot)" 
+                            >
+                            <div>{{ slot.id }} {{ slot.guest?.hasDisability ? '♿' : '' }} </div>
+                            <div>{{ slot.guest?.familyName }} {{ slot.guest?.firstName }}</div>
+                           
+                            <div>
+                                <div class="list-checkbox" 
+                                    [class.list-checkbox-warning]="slot.status=='inCue'"
+                                    [class.list-checkbox-active]="slot.status=='inAttraction'"
+                                    [class.list-checkbox-inactive]="slot.status=='canceled'"
+                                    > 
+                                    {{ slot.status=='inCue' ? '⏱' : '' }}
+                                    {{ slot.status=='canceled' ? '✘' : '' }}
+                                    {{ slot.status=='inAttraction' ? '✔' : '' }}
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="guests-canvas list frost-background">
+                <div class="table-list-title">Guests</div>
+                <div class="grid-container">
+                    <div class="grid frost-background">
+                       <div *ngFor="let slot of totalShowSlots" class="slot-card" 
+                            [ngClass]       = "{'card-selected': slot.selected}" 
+                            (click)         = "selectShowCard(slot)" 
+                            [class.warning]="slot.status=='inCue'"
+                            [class.active]="slot.status=='inAttraction'"
+                            [class.error]="slot.status=='canceled'"
+                            >
+                            <div class="slot-disability">{{ slot.guest?.hasDisability ? '♿' : '' }} </div>
+
+
+                             <div class="slot-guest-status" *ngIf="slot.guest">
+                                {{ slot.status=='inCue' ? '⏱' : '' }}
+                                {{ slot.status=='canceled' ? '✘' : '' }}
+                                {{ slot.status=='inAttraction' ? '✔' : '' }}
+                            </div>
+
+                            <div class="slot-guest" *ngIf="slot.guest">
+                                <div class="slot-guest-photo" [style.background-image]="'url(' + (slot.guest?.picture || 'assets/img/user.png') + ')'"></div>
+                                <div class="slot-guest-name">{{ slot.guest?.familyName }} {{ slot.guest?.firstName }}</div>
+                            </div>
+                            <div class="slot-guest-id" *ngIf="!slot.guest">{{slot.id}}</div>
+                            
+                        </div> 
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+</div>

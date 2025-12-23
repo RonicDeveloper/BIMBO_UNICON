@@ -1,0 +1,232 @@
+.panel{
+    min-width: 400px;
+	min-height: 300px; 
+}
+
+.panel-background{
+    background: -moz-linear-gradient(-45deg,  #45484d 0%, #000000 100%); 
+     background: -webkit-linear-gradient(-45deg,  #45484d 0%,#000000 100%); 
+     background: linear-gradient(135deg,  #45484d 0%,#000000 100%); 
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=1 ); 
+}
+ 
+.panel-shadow{
+     -webkit-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+     -moz-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+     box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+}
+ 
+.panel-border{
+     border-radius: 0px;
+     border-top: 1px solid rgba(88,88,88,0.5);
+     border-left: 1px solid rgba(88,88,88,0.5);
+     border-right: 1px solid rgba(0,0,0,0.8); 
+     border-bottom: 1px solid rgba(0,0,0,0.8);
+}
+
+.panel-title{
+	font-size: 30px;
+	color:white;
+}
+
+.panel-sub-title{
+	font-size: 12px;
+	color:white;
+	margin-top: 10px;
+	font-weight: lighter;
+}
+
+.panel-close-button{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	font-size: 20px;
+	color: gray;
+}
+
+.panel-extra-component-button{
+	position: absolute;
+	right: 20px;
+	top: 100px;
+	font-size: 20px;
+	color: white;
+}
+
+.panel-control{
+	position: absolute;
+	left: 15px;
+	right: 25px;
+	bottom: 15px;
+	padding: 0px;
+	text-align: right;
+}
+
+.panel-cover{
+	display: none;
+}
+
+.panel-small-cover{
+    position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 70px;
+	height: 100%;
+	cursor: pointer;
+}
+
+.panel-container {
+	/*   */
+	border: none;
+}
+
+.panel-large-container{
+    position: absolute;
+	left: 70px;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 20px;
+}
+
+.panel-large-cover{
+    position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 229px;
+	height: 100%;
+	cursor: pointer;
+}
+
+.panel-small-container{
+    position: absolute;
+	left: 229px;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+    padding-top: 20px;
+    
+}
+
+.panel-form{
+    position: absolute;
+    top: 85px;
+    bottom: 80px;
+    left: 20px;
+    right: 20px;
+	/*overflow-y: scroll;*/
+	border-top: 1px solid #FFFFFF20;
+	border-bottom: 1px solid #FFFFFF20; 
+	padding-top: 10px;
+	
+}
+
+.panel-control-button{
+	display: none;
+}
+
+.panel-form, label {
+	color: white !important;
+	font-size: 12px !important;
+}
+
+.panel-modal{
+	position: fixed;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.panel-image-old{
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	right: 50px;
+	top:-115px;
+	border-radius: 10px;
+	background: rgb(255, 255, 255);
+	-webkit-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+	box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+	vertical-align: middle;
+}
+
+.panel-image-container{
+	position: absolute;
+	top:-40px;
+	right: 70px;
+	width: 140px;
+	height: 190px;
+}
+
+.panel-image{
+	position: absolute;
+	width: 140px;
+	height: 140px;
+	left: 0px;
+	top: 0px;
+	border-radius: 10px;
+	background: rgb(0, 0, 0);
+	-webkit-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+    -moz-box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+	box-shadow: 10px 10px 21px -4px rgba(0,0,0,0.63);
+	vertical-align: middle;
+	overflow: hidden;	
+}
+
+.panel-image img{
+	position: absolute;
+	width: inherit;
+	height:  auto;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	
+}
+
+.panel-image-control{
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+}
+
+.panel-image-progress{
+    position: absolute;
+    bottom: -7px;
+}
+
+.panel-image-progress-label{
+    position: absolute;
+    bottom: -5px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+.form-creator-columns-render{
+    border-collapse: collapse !important;
+    border: rgba(255, 0, 0, 0.199) 1px dashed !important;
+}
+
+.panel-extra-component{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width:420px;
+    bottom: 20px;
+	border-left: #3b3b3c 1px solid;
+}
+
+.panel-form-error{
+	border-right: 1px solid rgba(122, 9, 9, 0.4) !important;
+	border-bottom: 1px solid rgba(122,9,9,0.4) !important;
+	border-top: 1px solid rgba(122, 0, 0, 0.6) !important;
+	border-left: 1px solid rgba(122,0,0,0.6) !important;
+}

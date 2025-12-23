@@ -1,0 +1,194 @@
+
+
+.list{
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+}
+
+.shows-canvas{
+    width: 400px;
+    height: 670px;
+    padding: 10px;
+}
+
+.schedules-canvas{
+    width: 300px;
+    height: 670px;
+    padding: 10px;
+}
+
+.guests-canvas{
+    width: 300px;
+    height: 670px;
+    padding: 10px;
+}
+
+.list-container{
+   width: 100%;
+   height: 85%;
+   overflow: scroll;
+}
+
+.sale-data{
+    width: 620px;
+}
+
+.form-canvas {
+    /* width: 40%; */
+    padding: 10px;
+}
+
+
+.server-status{
+     width: 500px;
+}
+
+.server-control {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+.server-control .button{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-field{
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.console-status{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 320px;
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+    overflow: scroll;
+    padding: 10px;
+}
+
+.console-output{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 300px;
+    width: 100%;
+    text-align: left;
+    font-size: 10px;
+    overflow: scroll;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-picture{
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.guests-canvas{
+    width: 570px;
+    height: 670px;
+    padding: 10px;
+    overflow: scroll;
+}
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px ;
+    padding: 10px;
+}
+
+.slot-card{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.slot-guest{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:    center;
+}
+
+.slot-disability{
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.slot-guest-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.slot-guest-name{
+    font-size: 12px;
+    text-align: center;
+}
+
+.slot-guest-status{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.slot-guest-id{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.379);
+}
+
+.warning{
+    background-color: rgba(255, 166, 0, 0.15);
+    color: white;
+}
+
+.active{
+    background-color: rgba(0, 255, 0, 0.15);
+    color: white;
+}
+.error{
+    background-color: rgba(255, 0, 0, 0.15);
+    color: white;
+}
+
+.card-selected{
+    border: 2px solid white;
+    box-shadow: 0 0 10px white;
+}

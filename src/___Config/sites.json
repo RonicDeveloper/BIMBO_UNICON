@@ -1,0 +1,181 @@
+[
+    {
+       "devices": [
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "10.39.3.177",
+                "macAddress": "bc:fc:e7:1b:bd:12",
+                "name": "ND-01-01",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D1",
+                "wolEnable": true,
+                "x": 100,
+                "y": 200
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "10.39.3.178",
+                "macAddress": "48:21:0b:6a:92:c8",
+                "name": "ND-01-02",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D2",
+                "wolEnable": true,
+                "x": 300,
+                "y": 200
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "10.39.3.179",
+                "macAddress": "48:21:0b:6a:98:a8",
+                "name": "ND-01-03",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D3",
+                "wolEnable": true,
+                "x": 500,
+                "y": 200
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "10.39.3.180",
+                "macAddress": "48:21:0b:6a:92:1b",
+                "name": "ND-01-04",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D4",
+                "wolEnable": true,
+                "x": 700,
+                "y": 200
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "10.39.3.181",
+                "macAddress": "48:21:0b:6a:92:b3",
+                "name": "ND-01-05",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D5",
+                "wolEnable": true,
+                "x": 100,
+                "y": 300
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "10.39.3.182",
+                "macAddress": "48:21:0b:6a:95:9c",
+                "name": "ND-01-06",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D6",
+                "wolEnable": true,
+                "x": 300,
+                "y": 300
+            },
+            {
+                "comPort": 0,
+                "comPortEnable": false,
+                "icon": "display",
+                "ipAddress": "10.39.3.183",
+                "macAddress": "48:21:0b:6a:99:52",
+                "name": "ND-01-07",
+                "pjLinkEnable": false,
+                "pjLinkStatus": {
+                    "rawValue": 0
+                },
+                "port": 6500,
+                "status": {
+                    "rawValue": 0
+                },
+                "type": {
+                    "rawValue": 1
+                },
+                "update": true,
+                "uuid": "FD1E11A3-A128-4EFD-B37F-854A20B633D7",
+                "wolEnable": true,
+                "x": 500,
+                "y": 300
+            }
+        ],
+        "floorPlan": "NuestraDistribucion",
+        "name": "Nuestra Distribucion",
+        "useWebSockets": true,
+        "uuid": "FB96589F-3860-4D08-9DE7-DADA3B692EB3",
+        "wsAddress": "192.168.0.10",
+        "wsPort": 6500
+    }
+   
+]

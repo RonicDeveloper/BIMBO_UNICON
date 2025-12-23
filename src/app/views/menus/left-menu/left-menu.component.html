@@ -1,0 +1,72 @@
+<div class="frost-background"
+    [class.main-container]               = "!MOBILE_VIEW" 
+    [class.main-container-mobile]        = "MOBILE_VIEW"
+>
+
+    <div 
+        [class.top-logo]               = "!MOBILE_VIEW" 
+        [class.top-logo-mobile]        = "MOBILE_VIEW"
+    >
+        <img src="___Assets/images/Logo-Ronic.png">
+    </div>
+
+    <div 
+        [class.icons-container]              = "!MOBILE_VIEW" 
+        [class.icons-container-mobile]        = "MOBILE_VIEW"
+    >
+        <div class="icon frost-background" (click)="toggleMenu()" >
+            <mat-icon svgIcon="book-open-outline" matListIcon  *ngIf="!MOBILE_VIEW" > </mat-icon>
+            <mat-icon svgIcon="menu" matListIcon  *ngIf="MOBILE_VIEW" > </mat-icon>
+        </div>
+        <div *ngIf="!MOBILE_VIEW">
+            <div *ngFor="let icon of selectedSubMenu.icons" class="icon frost-background" (click)="subvMenuButtonClicked(icon.tag)" 
+            [class.connected]       = "icon.state == 3" 
+            [class.connecting]      = "icon.state == 2" 
+            [class.disconnected]    = "icon.state == 1"
+            >
+                <mat-icon svgIcon="{{icon.icon}}" matListIcon > </mat-icon>
+            </div>
+        </div>
+    </div>
+
+    <div 
+        [class.main-menu]              = "!MOBILE_VIEW" 
+        [class.main-menu-mobile]       = "MOBILE_VIEW"
+    >
+    <!-- <mat-progress-bar mode="query"></mat-progress-bar> -->
+
+        <div *ngFor="let secction of MainMenu" class="menu-secction">
+            <div class="section-title" (click)="secction.isOpen=!secction.isOpen">
+                <mat-icon svgIcon="{{secction.icon}}" matListIcon class="menu-icon"> </mat-icon>
+                <div class="section-title-text">
+                    {{secction.name}}
+                </div>
+                
+                <span *ngIf="secction.isOpen"  > <mat-icon svgIcon="chevron-down" matListIcon > </mat-icon></span>
+                <span *ngIf="!secction.isOpen" > <mat-icon svgIcon="chevron-right" matListIcon > </mat-icon></span>
+            </div>
+            <div class="sub-menu" *ngIf="secction.isOpen">
+                <div *ngFor="let subMenu of secction.menuItems" class="sub-menu-item" (click)="selectMenu(secction.index,subMenu.index)">
+                    <div class="sub-menu-title">
+                        <mat-icon svgIcon="{{subMenu.icon}}" matListIcon class="sub-menu-icon"> </mat-icon>
+                        <div class="sub-menu-title-text">
+                            {{subMenu.name}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    
+    <div class="bottom-logo" *ngIf="!MOBILE_VIEW" >
+        <!--img src="___Assets/images/Logo-Ronic.png"-->
+    </div>
+
+    <!--button mat-fab extended>
+        <mat-icon>home</mat-icon>
+        Home
+      </button>
+      <p><mat-slide-toggle>Slide me!</mat-slide-toggle></p-->
+</div>
+

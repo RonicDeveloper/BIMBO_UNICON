@@ -1,0 +1,29 @@
+<div class="main-content frost-background">
+    <div class="panel">
+        ADMIN VIEW
+        <div class="server-control">
+            <select class="form-field field-medium" value="{{selectedService}}" (change)="chanegeService($event)">
+                <option *ngFor="let service of services" [value]="service.value" >{{service.viewValue}}</option>
+            </select>
+            <div class="button" (click)="serverActive ? serverControl('stop') : serverControl('start')" [ngClass]="{'green-state': serverActive, 'red-state ': !serverActive}">
+                        {{serverActive ? "Disconnect" : "Connect"}}
+            </div>
+
+            <div class="button" (click)="serverControl('restart')" >
+                Restart
+            </div>
+            <div class="button" (click)="serverControl('status')">
+                Status
+            </div>
+            
+        </div>
+        
+        <div class="console-status">
+            <pre>{{consoleHeader}}</pre>
+        </div>
+
+        <div class="console-output">
+            <pre>{{consoleOutput}}</pre>
+        </div>  
+    </div>
+</div>

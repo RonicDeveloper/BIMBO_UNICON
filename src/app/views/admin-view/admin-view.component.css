@@ -1,0 +1,39 @@
+.server-control {
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.server-control .button{
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-field{
+   margin-top: 10px;
+   margin-right: 10px;
+}
+
+.console-status{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 150px;
+    width: 700px;
+    text-align: left;
+    font-size: 10px;
+    /* overflow: scroll; */
+    padding: 10px;
+}
+
+.console-output{
+    border: 1px solid gray;
+    border-radius: 5px;
+    height: 400px;
+    max-width: 700px;
+    text-align: left;
+    font-size: 10px;
+    overflow: scroll;
+    padding: 10px;
+    margin-top: 10px;
+}

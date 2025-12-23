@@ -1,0 +1,214 @@
+.main-container {
+    position: absolute;
+    right: 50px;
+    width: 300px;
+    height: 100%;
+}
+
+.main-container-mobile{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.title-mobile{
+    position: absolute;
+    top: 0px;
+    left: 70px;
+    width: 200px;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+.icons-container {
+    position: absolute;
+    right: -55px;
+    width: 50px;
+    height: 100%;
+}
+
+.icons-container-mobile {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.icon{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.icon mat-icon {
+    margin-top: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.top-logo{
+    position: absolute;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.top-logo-mobile{
+    position: absolute;
+    display: block;
+    width: 60px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+
+.top-logo-mobile img{
+    position: absolute;
+    display: block;
+    width: 80px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+
+.top-logo img {
+    width: 150px;
+}
+
+.bottom-logo{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.bottom-logo img {
+    width: 150px;
+}
+
+
+.main-menu{
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    
+    padding: 10px;
+    color: white;
+}
+
+.main-menu-mobile{
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    right: 0px;
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.23);
+}
+
+.section-title{
+    position: relative;
+    margin-bottom: 5px;
+    display: flex;
+    padding: 3px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.section-title-text{
+    font-size: 14px;
+    position: relative;
+    line-height: 14px;
+    padding: 3px;
+    padding-left: 5px;
+    font-weight: lighter;
+}
+
+.section-title:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu-icon {
+    width: 20px;
+    height: 20px;    
+}
+
+.section-title span {
+    position: absolute;
+    right: 15px;
+}
+
+
+
+.sub-menu{
+    background: rgba(18, 18, 18, 0.5);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+
+.sub-menu-item{
+    padding-left: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+    cursor: pointer;
+}
+
+.sub-menu-item:last-child {
+    border-bottom: none;
+}
+
+.sub-menu-item:hover{
+    background: rgba(18, 18, 18, 0.8);
+}
+
+.sub-menu-title{
+    margin-bottom: 5px;
+    display: flex;
+    padding: 3px;
+    padding-top: 10px;
+}
+.sub-menu-icon {
+    width: 15px;
+    height: 15px;    
+    
+}
+
+.sub-menu-title-text{
+    font-size: 12px;
+    position: relative;
+    line-height: 14px;
+    padding-left: 5px;
+    font-weight: lighter;
+}
+
+.sub-menu-title i {
+    font-size: 14px;
+    padding: 10px;
+}
+
+.connected{
+    background-color: rgb(38, 82, 121);
+}
+
+.connecting{
+    background-color: rgb(120, 121, 38);
+}
+
+.discoonnected{
+    background-color: rgb(121, 38, 38);
+}

@@ -1,0 +1,205 @@
+
+    <div class="panel frost-background main-content">
+        <div class="panel-title">
+            Sales View
+        </div>
+
+        <div class="layout-row">
+            
+              <div class="list-canvas list frost-background">
+                    <div class="table-list-title">Tag List</div>
+                    <div class="button-line table-list-control">
+                        <div class="button" >Activate</div>
+                        <div class="button" >Deactivate</div>
+                    </div>
+                    <div class="list-container">
+                        <div class="table-list frost-background">
+                            <div class="table-header">
+                                <div>ID</div>
+                                <div>Identifier</div>
+                                <!-- <div>SaleNumber</div>
+                                <div>CreationDate</div>
+                                <div>ValidDate</div>
+                                <div>ExpirationDate</div>
+                                <div>AccessDate</div>
+                                <div>Active</div> -->
+                            </div>
+
+                            <div *ngFor="let item of tags" class="table-row" 
+                                [ngClass]       = "{'selected': item.selected}" 
+                                (click)         = "selectTag(item)" 
+                                >
+                                <div>{{ item.id }}</div>
+                                <div>{{ item.identifier }}</div>
+                                <!-- <div>{{ item.saleNumber}}</div>
+                                <div>{{ item.creationDate }}</div>
+                                <div>{{ item.validDate }}</div>
+                                <div>{{ item.expirationDate }}</div>
+                                <div>{{ item.accessDate }}</div> -->
+                                <!-- <div>{{ item.active }}</div> -->
+                                <div>
+                                    <div class="list-checkbox" 
+                                        [class.list-checkbox-active]="item.active"
+                                        [class.list-checkbox-inactive]="!item.active">
+                                        {{ item.active ? '✔' : '✘' }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+            <div class="sale-data">
+                <div class="form-canvas">
+                    <div class="table-list-title">Sales Form</div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Token</div>
+                            <input type="text" placeholder="Token" class="form-field field-long" value="{{authToken}}">
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-label">Use Auth</div>     
+                            <div class="form-checkbox" (click)="useAuth = !useAuth"
+                                [class.form-checkbox-active]="useAuth"
+                                [class.form-checkbox-inactive]="!useAuth">
+                                {{ useAuth ? '✔' : '✘' }}
+                            </div>
+                        </div>
+                            
+                        <div class="form-group">
+                            <div class="form-label">POS Obj.</div>     
+                            <div class="form-checkbox" (click)="usePOSObject = !usePOSObject ; "
+                                [class.form-checkbox-active]="usePOSObject"
+                                [class.form-checkbox-inactive]="!usePOSObject">
+                                {{ usePOSObject ? '✔' : '✘' }}
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Tag Id</div>
+                            <input type="text" placeholder="Tag Id" class="form-field field-small" value="{{currentTag?.id}}">
+                        </div>
+                            
+                        <div class="form-group">
+                            <div class="form-label">Identifier</div>
+                            <input type="text" placeholder="Identifier" class="form-field field-medium" value="{{currentTag?.identifier}}">
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="form-label">Random</div>
+                            <div class="form-button"  (click)="createNewTagId()">New Tag</div>
+                        </div>
+                    </div> 
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <div class="form-label">Sale Number</div>
+                            <input type="text" placeholder="Sale Number" class="form-field field-short" value="{{currentTag?.saleNumber}}">
+                        </div>
+                            
+                        <div class="form-group">
+                            <div class="form-label">Ticket</div>
+                            <input type="text" placeholder="######" class="form-field field-short" value="{{currentTag?.ticket}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">ADN</div>
+                            <input type="text" placeholder="######" class="form-field field-short" value="{{currentTag?.adn}}">
+                        </div>
+
+                        <div class="form-group">
+                        <div class="form-label">Station</div>
+                            <input type="text" placeholder="YYYY-MM-DD" class="form-field field-short" value="{{currentTag?.station}}">
+                        </div>
+                    </div>
+
+
+                      <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Creation Date</div>
+                        <input type="text" placeholder="YYYY-MM-DD" class="form-field field-medium" value="{{currentTag?.creationDate}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Valid Date</div>
+                            <input type="text" placeholder="YYYY-MM-DD" class="form-field field-medium" value="{{currentTag?.validDate}}">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="form-label">Expiration Date</div>
+                            <input type="text" placeholder="YYYY-MM-DD" class="form-field field-medium" value="{{currentTag?.expirationDate}}">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">GUUID</div>
+                            <input type="text" placeholder="UUID" class="form-field field-long" value="{{currentTag?.uuid}}">
+                        </div>
+                       
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="form-label">Access Date</div>
+                            <input type="text" placeholder="YYYY-MM-DD" class="form-field field-short">
+                        </div>
+                        <div class="form-group">
+                            <div class="form-label">Email</div>
+                            <input type="text" placeholder="Email" class="form-field field-medium" value="{{currentTag?.email}}">
+                        </div>
+                    </div>
+
+
+                    <div class="form-divider"></div>
+                    
+                    <div class="button-line table-list-control">
+
+                        <div class="button" (click)="sendTagEvent(1)">Door 1</div>
+                        <div class="button" (click)="sendTagEvent(2)">Door 2</div>  
+                        <div class="button" (click)="insertTag()">Insert</div>
+                        <!-- <div class="button" >Update</div> -->
+                        </div>
+
+                </div>
+            </div>
+
+            <div class="server-status">
+                <div class="server-control">
+
+                    <div class="button" (click)="serverActive ? serverControl('stop') : serverControl('start')" [ngClass]="{'green-state': serverActive, 'red-state ': !serverActive}">
+                                {{serverActive ? "Stop" : "Start"}}
+                    </div>
+
+                    <div class="button" (click)="serverControl('restart')" >
+                        Restart
+                    </div>
+                    <div class="button" (click)="serverControl('status')">
+                        Status
+                    </div>
+                    
+                </div>
+                
+                <div class="console-status">
+                    <pre>{{consoleHeader}}</pre>
+                </div>
+
+                <div class="console-output">
+                    <pre>{{consoleOutput}}</pre>
+                </div>  
+            </div>
+
+        </div>
+
+
+    </div>

@@ -1,0 +1,79 @@
+.main-container {
+    position: absolute;
+    left: 50px;
+    width: 300px;
+    height: 100%;   
+    padding: 10px;
+}
+
+
+.main-container-mobile{
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 50px;
+    bottom: 0px;
+    padding: 10px;
+}
+
+.icon{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.icon mat-icon {
+   margin: 7px;
+}
+
+.icons-container {
+    position: absolute;
+    left: -45px;
+    width: 50px;
+    height: 100%;
+}
+
+.icons-container-mobile {
+    position: absolute;
+    right: 0px;
+    top: -50px;
+    height: 50px;
+    text-align: right;
+    width: 500px;
+}
+
+.icons-container-mobile .icon {
+    float: right;
+    margin: 5px;
+}
+
+.tools-container-mobile{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.23);
+    overflow: scroll;
+}
+
+.tool-title{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+.tool-divider{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.591);
+}
+
+.selected{
+    background: rgba(21, 79, 72, 0.54);
+}
