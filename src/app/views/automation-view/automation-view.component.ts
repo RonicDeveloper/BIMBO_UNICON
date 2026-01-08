@@ -457,8 +457,13 @@ export class AutomationViewComponent  implements OnInit, AfterViewInit{
 
   runCommand(){
     this.CONTROL_WSOCKET.next({inst:"RUN_COMMAND",data:{
-      ipAddress:this.selectedDevice.ipAddress,
-      command:"C:\\RONIC\\BimboRunner.lnk"}})
+          ipAddress:this.selectedDevice.ipAddress,
+          command:"schtasks /run /tn \"BimboRunner\""
+          //command:"taskkill /IM msedge.exe /F"
+          
+        }
+      }
+    )
   }
 
 }
