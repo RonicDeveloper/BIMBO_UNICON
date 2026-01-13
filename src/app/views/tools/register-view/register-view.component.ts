@@ -12,7 +12,8 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-register-view',
   imports: [CommonModule,FormsModule],
   templateUrl: './register-view.component.html',
-  styleUrl: './register-view.component.css'
+  styleUrl: './register-view.component.css',
+  standalone: true
 })
 export class RegisterViewComponent {
 

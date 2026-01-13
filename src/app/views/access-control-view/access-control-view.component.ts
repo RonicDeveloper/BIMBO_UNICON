@@ -26,7 +26,7 @@ export class AccessControlViewComponent implements OnInit, AfterViewInit{
   viewActive    = false;
   clientIpAddress = "";
   clientUUID      = "";
-  attractionCode  = "TR-01-*";
+  attractionCode  = "DOOR_ADMIN";
   outEvent        = "";
   inputEvent      = "";
   clientList     = new Array<Client>();
@@ -185,9 +185,9 @@ loadSettings(){
    sendTagEvent( doorNumber:number){ 
     let body = {
       NotificationType : "entrance",
-      Identifier : "TEST_TAG_0001",
+      Identifier : "12C8BD000000002025001199",
       ReadTime : new Date().toISOString(),
-      ReadPointName : "TR-01-0" + doorNumber,
+      ReadPointName : "OP-03-0" + doorNumber,
     }
 
     this.service.tagNotification(body).subscribe((result: any) =>  { 

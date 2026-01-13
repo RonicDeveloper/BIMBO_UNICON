@@ -145,11 +145,11 @@ function processMessage(message) {
             console.log('[TAG EVENT]', tagEvent.identifier, tagEvent.readPointName);  
             if(data.readPointName == DOOR_1_AATTRACTION_CODE){
                 DOOR_NUMBER = 1;
-                getAccess(tagEvent,1);
+                getAccess(tagEvent,DOOR_NUMBER);
             }
             if(data.readPointName == DOOR_2_AATTRACTION_CODE){
                 DOOR_NUMBER = 2;
-                getAccess(tagEvent,2);
+                getAccess(tagEvent,DOOR_NUMBER);
             }
             
             break;
